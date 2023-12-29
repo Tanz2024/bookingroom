@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking System</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/hotel-logo-design_423075-16.jpg?w=740" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+        function openWhatsApp(phoneNumber) {
+            window.location.href = `https://wa.me/${phoneNumber}`;
+        }
+
+        
+        function callNumber(phoneNumber) {
+            window.location.href = `tel:${phoneNumber}`;
+        }
+
+        // Function to open Gmail with the provided email address
+        function openGmail(email) {
+            window.location.href = `mailto:${email}`;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+            <div class="header-content">
+                <h1>Room Booking System</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="signup.php">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="booking-form">
+            <h2>Room Booking</h2>
+            <form action="book_room.php" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required>
+
+                <label for="arrival_date">Arrival Date:</label>
+                <input type="date" name="arrival_date" id="arrival_date" required>
+
+                <label for="departure_date">Departure Date:</label>
+                <input type="date" name="departure_date" id="departure_date" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required onclick="openGmail('info@yourhotel.com')">
+
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" name="phone_number" id="phone_number" required onclick="callNumber('+12345678901')">
+
+                <label for="ic_passport">IC/Passport Number:</label>
+                <input type="text" name="ic_passport" id="ic_passport" required>
+
+                <label for="adults">Adults:</label>
+                <input type="number" name="adults" id="adults" required>
+
+                <label for="children">Children:</label>
+                <input type="number" name="children" id="children" required>
+
+                <label for="room_preference">Room Preference:</label>
+                <select name="room_preference" id="room_preference" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <button type="submit">Book Room</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="booking-details">
+                    <h3>Room Booking Details</h3>
+                    <p>Book your stay with us and enjoy a luxurious experience. Our rooms are designed for your comfort and satisfaction.</p>
+                    <h3>Booking Policy</h3>
+                    <p>We require a valid credit card to guarantee your reservation. Cancellation policies may vary; please check during booking.</p>
+                </div>
+                <div class="hotel-info">
+                    <h3>Hotel Information</h3>
+                    <p>Address: 123 Main Street, Cityville</p>
+                    <p>Phone: <a href="tel:+12345678901">+1 234-567-8901</a></p>
+                    <p>Email: <a href="mailto:info@yourhotel.com">info@yourhotel.com</a></p>
+                </div>
+            </div>
+            <div class="professional-footer">
+                <p>&copy; 2023 Room Booking System. All rights reserved.</p>
+                <p>Designed with ❤️ by Your Hotel Name</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

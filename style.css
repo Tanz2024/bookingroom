@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://e0.pxfuel.com/wallpapers/390/533/desktop-wallpaper-luxurious-interior-bedroom-classic-design-luxury-hotel-room-for-with-resolution-high-quality.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5; /* Fallback color in case the image is unavailable */
+}
+
+/* Add your other styles below */
+
+/* Add your existing styles for .top-bar, .translator, .banner, .logo-img, .header-content, nav, .container, .booking-form, h2, form, label, input, button, footer, .footer-logo, .footer-info here */
+
+/* Updated styles for the header */
+header {
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+    text-align: center; /* Center text in header */
+}
+
+.top-bar {
+    text-align: right;
+}
+
+.translator {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.translator img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.translate-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content in banner */
+}
+
+.logo-img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-content {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center navigation links */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0;
+    transition: background-color 0.3s;
+}
+
+/* Updated styles for the navigation links */
+nav a.home,
+nav a.about,
+nav a.login,
+nav a.signup {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+nav a.home:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+nav a.about:hover,
+nav a.login:hover,
+nav a.signup:hover,
+nav a.active {
+    background-color: #21618c;
+    color: #fff;
+}
+
+/* Updated styles for the body */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.booking-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Updated styles for the footer */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    text-align: left;
+    max-width: 600px;
+}
+
+.booking-details,
+.hotel-info,
+.professional-footer {
+    flex: 1;
+}
+
+.footer-info h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
