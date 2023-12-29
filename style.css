@@ -86,7 +86,7 @@ nav a.signup {
 }
 
 nav a.home:focus {
-    outline: none; /* Remove default focus outline */
+    outline: none; 
 }
 
 nav a.about:hover,
